@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="login.css">
+    <title>Login</title>
+</head>
+<body>
+    <!----------------Header----------------->
+    <header>
+        <section class="home" id="Home">
+            <div class="home-box">
+                <nav>
+                    <div class="logo bars">
+                        <div class="bar">
+                            <i class="fa fa-bars"></i>
+                        </div>
+                        <a href="index.html"><h3>Travel</h3></a>
+                    </div>
+                    <div class="menu">
+                        <div class="close">
+                            <i class="fa fa-close"></i>
+                        </div>
+                    </div>            
+                    <div class="login">
+                        <select name="lenguage" id="change_language">
+                            <option value="English">EN</option>
+                            <option value="Georgian">GE</option>
+                        </select>
+                        <a href="#">login</a>
+                    </div>
+                </nav>
+                <div class="background">
+                    <div class="form-box">
+                        <div class="button-box">
+                            <div id="btn"></div>
+                            <button type="button" class="toggle-btn" onclick="signin()">Sign In</button>
+                            <button type="button" class="toggle-btn" onclick="register()">Register</button>
+                        </div>
+                        <form id="Sign In" class="input-group">
+                            <input type="email" class="input-field" placeholder="Email or phone number" required>
+                            <input type="password" class="input-field" placeholder="Password" required>
+                            <a href="main.html"><button type="submit" class="submit-btn">Sign In</button></a>
+                            <div class="checkbox-container">
+                                <input type="checkbox" class="checkbox" id="remember-me">
+                                <label for="remember-me">Remember me</label>
+                            </div>
+                            <a href="#" class="help-link">Forgot password?</a>
+                        </form>
+                        <form id="register" class="input-group">
+                            <input type="text" class="input-field" placeholder="Username" required>
+                            <input type="email" class="input-field" placeholder="Email" required>
+                            <input type="password" class="input-field" placeholder="New Password" required>
+                            <input type="password" class="input-field" placeholder="Confirm Password" required>
+                            <button type="submit" class="submit-btn">Register</button>
+                            <div class="checkbox-container">
+                                <input type="checkbox" class="checkbox" id="terms">
+                                <label for="terms">I agree to the terms & conditions</label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+        </section>
+    </header>
+    <!-----------------Header-------------------->
+
+    <script>
+        var x = document.getElementById("Sign In");
+        var y = document.getElementById("register");
+        var z = document.getElementById("btn");
+
+        function signin() {
+            x.style.display = "block";
+            y.style.display = "none";
+            z.style.left = "0";
+        }
+
+        function register() {
+            x.style.display = "none";
+            y.style.display = "block";
+            z.style.left = "110px";
+        }
+        signin();
+    </script>
+    
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Davit_aroundtheworld</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <!----------------Header----------------->
+    <header>
+        <section class="home" id="Home">
+            <div class="home-box">
+                <nav>
+                    <div class="logo bars">
+                        <div class="bar">
+                            <i class="fa fa-bars"></i>
+                        </div>
+                        <h3>Travel</h3>
+                    </div>
+                    <div class="menu">
+                        <div class="close">
+                            <i class="fa fa-close"></i>
+                        </div>
+                        <ul>
+                            <li><a href="#Home">home</a></li>
+                            <li><a href="#About">about</a></li>
+                            <li><a href="#Offers">offers</a></li>
+                            <li><a href="#Destinations">destinatons</a></li>
+                            <li><a href="#Contact">contact</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="login">
+                            <a id="photo_2"></a>
+                            <i class='bx bx-search-alt-2' id="search_1" onclick="search_click()"></i>
+                        <input type="text" id="hearder_search" placeholder="Search Location... "> 
+                        <button id="button_for_close" onclick="close_X()">X</button>
+
+                        <select name="lenguage" id="change_language">
+                            <option value="English">EN</option>
+                            <option value="Georgian">GE</option>
+                        </select>
+                        <a href="login.html">login</a>
+                    </div>
+                </nav>
+    
+                <div class="content">
+                    <h5>Davit_aroundtheworld</h5>
+                    <h1>dream journey</h1>
+                    <p>discover inspiring destinatons, create unfgettable memories, and travel with confidence - adventure start adventure starts here</p>
+    
+                    <div class="search">
+                        <i class="fa fa-search"></i>
+                        <input type="text" placeholder="your jouney begins with a search...">
+                        <button>search</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <!-----------------Header-------------------->
+
+    <!-----------------Offers-------------------->
+    <!-- 1 -->
+    <div class="main-div-1" id="Offers">
+        <h2>Offers</h2>
+        <a href="#">View All</a>
+        <i class='bx bxs-chevron-left-circle' onclick="left_click()"></i>
+        <i class='bx bxs-chevron-right-circle' onclick="right_click()" ></i>
+
+        <div class="main-div-2">
+
+            <div id="div-1">
+                
+                <div class="photos">
+                    <img src="./img/qqq.jpg.avif">
+                    <h3>Rome</h3>
+                    <div class="stars" data-rating="5"></div>
+                </div>
+                <div class="photos">
+                    <img src="./img/georgia.jpg">
+                    <h3>Georgia</h3>
+                    <div class="stars" data-rating="4"></div>
+                </div>
+                <div class="photos">
+                    <img src="./img/ddd.png">
+                    <h3>Maldives</h3>
+                    <div class="stars" data-rating="5"></div>
+                </div>
+                <div class="photos">
+                    <img src="./img/eee.jpg">
+                    <h3>London</h3>
+                    <div class="stars" data-rating="4"></div>
+                </div>
+            </div>
+            <!-- 1 -->
+
+            <!-- 2 -->
+            <div id="div-2">
+
+                <div class="photos">
+                    <img src="./img/destinations-1.jpg">
+                    <h3>Bali</h3>
+                    <div class="stars" data-rating="5"></div>
+                </div>
+                <div class="photos">
+                    <img src="./img/maiami.webp">
+                    <h3>Maiami Beach</h3>
+                    <div class="stars" data-rating="4"></div>
+                </div>
+                <div class="photos">
+                    <img src="./img/ggg.jpg">
+                    <h3>Hong Kong</h3>
+                    <div class="stars" data-rating="5"></div>
+                </div>
+                <div class="photos">
+                    <img src="./img/www.jpg">
+                    <h3>Tokio</h3>
+                    <div class="stars" data-rating="5"></div>
+                </div>
+            </div>
+        </div>
+        <!-- 2 -->
+
+        <!----- Georgian Version ------->
+        <!-- 1 -->
+        <div class="main-div-2-GE">
+            
+            <div id="div-1">
+                
+                <div class="photos">
+                    <img src="./img/qqq.jpg.avif">
+                    <h3>რომი</h3>
+                    <div class="stars" data-rating="5"></div>
+                </div>
+                <div class="photos">
+                    <img src="./img/georgia.jpg">
+                    <h3>საქართველო</h3>
+                    <div class="stars" data-rating="4"></div>
+                </div>
+                <div class="photos">
+                    <img src="./img/ddd.png">
+                    <h3>მალდივის კუნძული</h3>
+                    <div class="stars" data-rating="5"></div>
+                </div>
+                <div class="photos">
+                    <img src="./img/ggg.jpg">
+                    <h3>ჰონგ კონგი</h3>
+                    <div class="stars" data-rating="4"></div>
+                </div>
+            </div>
+            <!-- 1 -->
+
+
+            <!-- 2 -->
+            <div id="div-2">
+
+                <div class="photos">
+                    <img src="./img/destinations-1.jpg">
+                    <h3>ბალი</h3>
+                    <div class="stars" data-rating="5"></div>
+                </div>
+                <div class="photos">
+                    <img src="./img/maiami.webp">
+                    <h3>მაიამის სანაპირო</h3>
+                    <div class="stars" data-rating="4"></div>
+                </div>
+                <div class="photos">
+                    <img src="./img/eee.jpg">
+                    <h3>ლონდონი</h3>
+                    <div class="stars" data-rating="5"></div>
+                </div>
+                <div class="photos">
+                    <img src="./img/www.jpg">
+                    <h3>ტოკიო</h3>
+                    <div class="stars" data-rating="5"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 2 -->
+    <!---------------Offers------------------>
+
+    <!------------------destinatons------------------->
+    <section class="destinations" id="Destinations">
+        <h4 class="label">destinations</h4>
+        <div class="container">
+            <div class="container-box">
+                <h2 class="heading">Special Offers</h2>
+                <div class="content">
+                    <a href="#">explore more <i class="fa fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="gallery">
+                <div class="box box1">
+                    <img src="./img/yyy.jpg" alt="">
+                    <div class="text">
+                        <h2>Navagio Beach Greece</h2>
+                        <div class="stars" data-rating="5"></div>
+                    </div>
+                </div>
+                <div class="box box2">
+                    <img src="./img/ttt.jpg" alt="">
+                    <div class="text">
+                        <h2>Dubai</h2>
+                        <div class="stars" data-rating="5"></div>
+                    </div>
+                </div>
+                <div class="box box3">
+                    <img src="./img/destinations-1.jpg" alt="">
+                    <div class="text">
+                        <h2>bali</h2>
+                        <div class="stars" data-rating="5"></div>
+                    </div>
+                </div>
+                <div class="box box4">
+                    <img src="./img/bbb.jpg.webp" alt="">
+                    <div class="text">
+                        <h2>Italia</h2>
+                        <div class="stars" data-rating="5"></div>
+                    </div>
+                </div>
+                <div class="box box5">
+                    <img src="./img/riode.jpg" alt="">
+                    <div class="text">
+                        <h2>Rio De Janeiro</h2>
+                        <div class="stars" data-rating="5"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--------------destinatons-------------->
+
+    <!---------------featured---------------->
+    <section class="featured">
+        <div class="gallery">
+            <div class="box box1">
+                <div class="first-box">
+                    <h4 class="label">featured offers</h4>
+                    <h2 class="heading">unlock exclusive travel deals</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium esse labore,
+                    </p>
+                    <a href="#">show more</a>
+                    <div class="image">
+                        <img src="./img/plane.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="box box2">
+                <img src="./img/ddd.png" alt="">
+                <div class="content">
+                    <h2>Maldives</h2>
+                    <div class="review-and-idr">
+                        <div class="stars" data-rating="5"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="box box3">
+                <img src="./img/qqq.jpg.avif" alt="">
+                <div class="content">
+                    <h2>Rome</h2>
+                    <div class="review-and-idr">
+                        <div class="stars" data-rating="5"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="box box4">
+                <img src="./img/riode.jpg" alt="">
+                <div class="content">
+                    <h2>Rio De Janeiro</h2>
+                    <div class="review-and-idr">
+                        <div class="stars" data-rating="5"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!---------------featured----------------->
+
+    <!----------------travel---------------->
+    <section class="travel">
+        <div class="container">
+            <div class="box box1">
+                <img src="./img/planning.png" alt="">
+                <div class="content">
+                    <h4>seamless travel planning</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam fugiat deleniti magni, consequuntur necessitatibus doloremque. Ratione sunt debitis unde ullam.</p>
+                </div>
+            </div>
+            <div class="box box2">
+                <img src="./img/map.png" alt="">
+                <div class="content">
+                    <h4>toilored experiences</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam fugiat deleniti magni, consequuntur necessitatibus doloremque. Ratione sunt debitis unde ullam.</p>
+                </div>
+            </div>
+            <div class="box box3">
+                <img src="./img/trust.png" alt="">
+                <div class="content">
+                    <h4>reliable and trustworthy</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam fugiat deleniti magni, consequuntur necessitatibus doloremque. Ratione sunt debitis unde ullam.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-------------------travel--------------------->
+
+    <!-------------article-------------->
+    <section class="article">
+        <h4 class="label">resources</h4>
+        <h2 class="heading">latest article</h2>
+        <div class="container">
+            <div class="latest-article">
+                <img src="./img/Image 1.jpg" alt="">
+                <p>destination discovery</p>
+                <h3>10 must-visit hidden game in southeast asia</h3>
+                <div class="author">
+                </div>
+            </div>
+            <div class="more-article">
+                <div class="box box1">
+                    <div class="image">
+                        <img src="./img/destinations-3.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>Traveling with kids: tips for stress-free family adventures</h3>
+                    </div>
+                </div>
+                <div class="box box2">
+                    <div class="image">
+                        <img src="./img/destinations-4.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>culinary adventure: exploring world cuisines on your travels</h3>
+                    </div>
+                </div>
+                <div class="box box3">
+                    <div class="image">
+                        <img src="./img/budget-travel.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>traveling on budget: tips for affordable advne</h3>
+                    </div>
+                </div>
+                <div class="box box4">
+                    <div class="image">
+                        <img src="./img/hidden-game.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>traveling with kids: tips for stress-free family adventures</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!------------article------------>
+
+     <!---------Contact--------->
+     <div class="contact" id="Contact">
+        <div class="form">
+            <h1>Contact Us</h1>
+            <div class="inputBx">
+                <p>Enter Name</p>
+                <input type="text" placeholder="Full Name">
+            </div>
+            <div class="inputBx">
+                <p>Enter Email</p>
+                <input type="text" placeholder="Email">
+            </div>
+            <div class="inputBx">
+                <p>Massage</p>
+                <textarea placeholder="Type Massage Here..."></textarea>
+            </div>
+            <div class="inputBx">
+                <input type="submit" name="Submit">
+            </div>
+        </div>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d190570.63418894136!2d44.80676375!3d41.72772215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40440cd7e64f626b%3A0x61d084ede2576ea3!2z4YOX4YOR4YOY4YOa4YOY4YOh4YOY!5e0!3m2!1ska!2sge!4v1718974425253!5m2!1ska!2sge" width="auto" height="auto" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+    <!---------Contact--------->
+
+    <!------------Footer------------>
+    <footer>
+        <section class="footer">
+            <div class="container">
+                <div class="detail">
+                    <h3>Travel</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere in, non praesentium soluta quis enim aperiam aliquam, rem totam porro, vel obcaecati modi architecto error maiores iusto quaerat aut eum.</p>
+                    <h5>get in touch</h5>
+                    <a href="#">jalagonia2005@gmail.com</a>
+                    <div class="social">
+                        <a href="#"><i class="fa fa-linkedin-square"></i></a>
+                        <a href="#"><i class="fa fa-facebook-square"></i></a>
+                        <a href="#"><i class="fa fa-twitter-square"></i></a>
+                    </div>
+                </div>
+                <div class="about-us">
+                    <h4>about us</h4>
+                    <li><a href="#">about us</a></li>
+                    <li><a href="#">our term</a></li>
+                    <li><a href="#">careers <span>we're hiring!</span></a></li>
+                    <li><a href="#">mission and values</a></li>
+                    <li><a href="#">partnerships</a></li>
+                </div>
+                <div class="about-us">
+                    <h4>help</h4>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">booking guide</a></li>
+                    <li><a href="#">cancellation policy</a></li>
+                    <li><a href="#">site map</a></li>
+                </div>
+                <div class="about-us">
+                    <h4>Resources</h4>
+                    <li><a href="#">newsletter</a></li>
+                    <li><a href="#">blog</a></li>
+                    <li><a href="#">gallery</li>
+                    <li><a href="#">offers</a></li>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <div>
+                    &copy;2024 - Travel
+                </div>
+                <div>
+                    <a href="#">term & conditions</a>
+                    <a href="#">privacy policy</a>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <!-------------Footer------------->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js" integrity="sha512-EZI2cBcGPnmR89wTgVnN3602Yyi7muWo8y1B3a8WmIv1J9tYG+udH4LvmYjLiGp37yHB7FfaPBo8ly178m9g4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js" integrity="sha512-OzC82YiH3UmMMs6Ydd9f2i7mS+UFL5f977iIoJ6oy07AJT+ePds9QOEtqXztSH29Nzua59fYS36knmMcv79GOg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+</html>
